@@ -34,8 +34,7 @@ const colors = {
 }
 
 const fonts = {
-    body: 'JetBrains Mono, monospace',
-    heading: 'JetBrains Mono, monospace'
+    body: 'JetBrains Mono, monospace'
 }
 
 const components = {
