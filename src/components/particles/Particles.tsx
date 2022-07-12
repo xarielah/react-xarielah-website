@@ -1,6 +1,5 @@
 import { useCallback, useMemo } from 'react'
 import { Particles } from 'react-tsparticles'
-// import { loadSlim } from 'tsparticles-slim'
 import { loadFull } from 'tsparticles'
 import { Engine } from 'tsparticles-engine'
 
@@ -49,9 +48,8 @@ const ParticlesComponent = () => {
         }
     }), [])
 
-    const particlesInit = useCallback((engine: Engine) => {
-        // loadSlim(engine)
-        loadFull(engine)
+    const particlesInit = useCallback((engine: Engine): Promise<void> => {
+        return loadFull(engine)
     }, [])
 
     return <Particles init={particlesInit} options={options} />
