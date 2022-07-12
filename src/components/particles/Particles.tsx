@@ -5,7 +5,6 @@ import { Engine } from 'tsparticles-engine'
 
 const ParticlesComponent = () => {
     const options = useMemo(() => ({
-        fpsLimit: 60,
         interactivity: {
             events: {
                 onClick: {
