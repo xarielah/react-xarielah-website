@@ -1,6 +1,4 @@
 import { extendTheme } from "@chakra-ui/react"
-import { mode } from '@chakra-ui/theme-tools'
-import { isWhiteSpaceLike } from "typescript"
 
 //https://coolors.co/palette/ff6d00-ff7900-ff8500-ff9100-ff9e00-240046-3c096c-5a189a-7b2cbf-9d4edd
 

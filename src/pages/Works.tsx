@@ -1,10 +1,13 @@
 import React from "react"
+import PageContainerAnimation from "../components/animation/PageContainer"
 
 const Works: React.FC = () => {
     return (
-        <>
-            works
-        </>
+        <PageContainerAnimation>
+            <>
+                works
+            </>
+        </PageContainerAnimation>
     )
 }
 

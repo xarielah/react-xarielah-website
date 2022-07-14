@@ -11,6 +11,7 @@ const MainLayout: React.FC<Props> = ({ children }) => {
     return (
         <Box position="relative">
             <Navbar />
+
             <Container
                 display="flex"
                 justifyContent="center"

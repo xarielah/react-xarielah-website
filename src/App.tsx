@@ -1,5 +1,6 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { AnimatePresence } from 'framer-motion';
 
 import MainLayout from './components/layouts/main';
 
@@ -17,15 +18,17 @@ function App(): JSX.Element {
     <ChakraProvider theme={theme}>
       <BrowserRouter>
         <MainLayout>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path='/works' element={<Works />} />
-            <Route path='/about' element={<About />} />
-            <Route path="*" element={<Home />} />
-          </Routes>
+          <AnimatePresence initial={true} exitBeforeEnter>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path='/works' element={<Works />} />
+              <Route path='/about' element={<About />} />
+              <Route path="*" element={<Home />} />
+            </Routes>
+          </AnimatePresence>
         </MainLayout>
       </BrowserRouter>
-    </ChakraProvider>
+    </ChakraProvider >
   );
 }
 
